@@ -1,0 +1,27 @@
+
+
+/* 
+  Esta clase se aplica al contenedor principal de la sección "hero" 
+  (la sección de portada, donde va una imagen llamativa con texto)
+*/
+.hero-bg {
+  /* Imagen de fondo sacada de Unsplash relacionada a tecnología y computadoras */
+  background-image: url('https://source.unsplash.com/1600x600/?technology,computers');
+  
+  /* Hace que la imagen cubra todo el contenedor */
+  background-size: cover;
+
+  /* Centra la imagen horizontal y verticalmente */
+  background-position: center;
+
+  /* Altura de la sección: 70% de la altura de la pantalla */
+  height: 70vh;
+}
+
+/* ⚠️ Esto es incorrecto: estás metiendo "html" dentro de una clase */
+/* Debería estar fuera de la clase .hero-bg así 👇 */
+
+html {
+  /* Hace que al dar clic en enlaces con #ancla, baje suavemente */
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEKLOBO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+
+<!-- NAV -->
+<!-- NAVBAR MEJORADO -->
+<nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    
+    <!-- LOGO -->
+    <div class="flex items-center">
+      <img src="imagen/lobo.png" alt="Logo" class="h-10 w-auto mr-2">
+      <span class="text-xl font-bold text-blue-700 hidden sm:inline">TEKLOBO</span>
+    </div>
+    
+    <!-- MENÚ DESKTOP -->
+    <div class="space-x-2 hidden md:flex">
+      <a href="#nosotros" class="px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-gray-600 hover:text-white transition duration-300">Nosotros</a>
+      <a href="#licencias" class="px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-gray-600 hover:text-white transition duration-300">Licencias</a>
+      <a href="#programas" class="px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-gray-600 hover:text-white transition duration-300">Programas</a>
+      <a href="#servicio" class="px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-gray-600 hover:text-white transition duration-300">Servicio Técnico</a>
+      
+      <a href="#contacto" class="px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-gray-600 hover:text-white transition duration-300">Contacto</a>
+    </div>
+
+    <!-- BOTÓN MENÚ MÓVIL -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-2xl text-gray-700 focus:outline-none">☰</button>
+    </div>
+  </div>
+
+  <!-- MENÚ MÓVIL -->
+  <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
+      <a href="#nosotros" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">Nosotros</a>
+    <a href="#licencias" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">Licencias</a>
+    <a href="#programas" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">Programas</a>
+    <a href="#servicio" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">Servicio Técnico</a>
+  
+    <a href="#contacto" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO SLIDER -->
+<section class="relative mt-[64px] overflow-hidden">
+  <div class="relative w-full h-[500px]">
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-100 bg-cover bg-center slider-image" style="background-image: url('imagen/antivirus.jpg');"></div>
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/officep.jpg');"></div>
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/corel.jpg');"></div>
+        <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/servicio.jpg');"></div>
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/autocad.jpg');"></div>
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/windows.jpg');"></div>
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/productos.jpg');"></div>
+
+
+
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-white text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Lo mejor en tecnología</h1>
+        <p class="text-lg md:text-xl">Licencias, accesorios, y servicio técnico profesional</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="bg-gray-50 py-20 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">Nosotros</h2>
+    <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+      En <strong>TEKLOBO</strong>, nos apasiona la tecnología y el servicio de calidad. Somos una tienda virtual especializada en la venta de licencias originales de software, programas especializados, accesorios y servicio técnico confiable. Nos esforzamos por brindar soluciones tecnológicas accesibles y eficaces para usuarios y empresas que buscan mejorar su productividad y seguridad digital.
+    </p>
+  </div>
+</section>
+
+<!-- LICENCIAS -->
+<section id="licencias" class="max-w-6xl mx-auto py-20 px-4">
+  <h2 class="text-3xl font-bold mb-10 text-center">Licencias de Software</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="/imagen/1.jpg" alt="Windows 11 Pro" class="w-full">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Windows 11 Pro</h3>
+        <p class="text-gray-600">Licencia original</p>
+        <span class="text-blue-600 font-bold text-lg">S/ 35.00</span>
+      </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="/imagen/12.jpg" alt="Office 2021" class="w-full">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Microsoft Office 2021</h3>
+        <p class="text-gray-600">Licencia permanente</p>
+        <span class="text-blue-600 font-bold text-lg">S/ 45.00</span>
+      </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="https://via.placeholder.com/400x250" alt="Antivirus ESET" class="w-full">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Antivirus ESET NOD32</h3>
+        <p class="text-gray-600">Protección por 1 año</p>
+        <span class="text-blue-600 font-bold text-lg">S/ 25.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMAS -->
+<section id="programas" class="bg-gray-50 py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-10 text-center">Programas Especiales</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="https://via.placeholder.com/400x250" alt="Adobe Photoshop" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Adobe Photoshop CC</h3>
+          <p class="text-gray-600">Versión extendida para diseño</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 30.00</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="https://via.placeholder.com/400x250" alt="AutoCAD" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">AutoCAD 2023</h3>
+          <p class="text-gray-600">Ideal para arquitectura e ingeniería</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 40.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIO TÉCNICO -->
+<section id="servicio" class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-10 text-center">Servicio Técnico</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-white shadow-lg rounded-xl p-6">
+        <h3 class="text-xl font-semibold mb-2">Formateo e instalación</h3>
+        <p class="text-gray-600">Reinstalación completa de sistema operativo con drivers y programas básicos.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl p-6">
+        <h3 class="text-xl font-semibold mb-2">Mantenimiento preventivo</h3>
+        <p class="text-gray-600">Limpieza interna, cambio de pasta térmica y revisión general.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl p-6">
+        <h3 class="text-xl font-semibold mb-2">Repotenciación</h3>
+        <p class="text-gray-600">Mejoramos el rendimiento de tu equipo con upgrade de SSD, RAM y más.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="bg-white py-20 px-4">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Contáctanos</h2>
+    <form class="grid grid-cols-1 gap-6">
+      <input type="text" placeholder="Nombre" class="p-3 border border-gray-300 rounded-md" required>
+      <input type="email" placeholder="Correo electrónico" class="p-3 border border-gray-300 rounded-md" required>
+      <textarea placeholder="Tu mensaje" rows="5" class="p-3 border border-gray-300 rounded-md" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700">Enviar Mensaje</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-800 text-white py-8">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <p class="mb-4">© 2025 TEKLOBO. Todos los derechos reservados.</p>
+    <div class="flex justify-center space-x-6">
+      <a href="https://wa.me/51925129997" target="_blank" class="hover:text-green-400">WhatsApp</a>
+      <a href="https://facebook.com" target="_blank" class="hover:text-blue-400">Facebook</a>
+      <a href="mailto:tek.lobo@gmail.com" class="hover:text-red-400">Correo</a>
+    </div>
+  </div>
+</footer>
+
+<!-- BOTÓN WHATSAPP FLOTANTE -->
+<a href="https://wa.me/51925129997" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-600 transition">
+  WhatsApp
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
